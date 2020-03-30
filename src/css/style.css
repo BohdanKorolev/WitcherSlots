@@ -195,6 +195,9 @@ body {
   height: 3em;
   z-index: 1;
 }
+.footer__logo {
+  height: 100%;
+}
 .footer__img {
   height: 100%;
   width: auto;
@@ -249,7 +252,6 @@ body {
   }
 
   .active {
-    height: 105vh;
     background-image: url("src/images/witcher.png");
     background-size: cover;
     background-position: center;
@@ -264,55 +266,49 @@ body {
     margin: 0;
   }
 }
-@media only screen and (max-width: 425px) {
-  .active {
-    background: none;
-    background-image: none;
+@media only screen and (max-width: 823px) {
+  body {
+    font-size: 12px;
   }
-  .active__percents {
-    font-size: 7em;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  body {
+    font-size: 13px;
+  }
+
+  .active__play {
+    padding-top: 2em;
   }
   .active__code {
-    margin-top: 1.5em;
+    margin: 1.5em auto 0;
   }
-  .active__button {
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    line-height: 1.1em;
-    color: #ffffff;
-    font-family: "Arial";
-    font-weight: bold;
-    text-align: center;
-    width: 15em;
-    height: 3em;
-    border-radius: 40px;
-    background-color: #f73427;
-    transition-duration: 0.4s;
+}
+@media only screen and (max-width: 568px) {
+  body {
+    font-size: 10px;
   }
-  .active__play {
-    padding-top: 1.5em;
-  }
-
-  .code__input {
-    width: 5.5em;
-  }
-  .code__button {
-    width: 150px;
-  }
-
-  .footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+@media only screen and (max-width: 411px) {
+  body {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 375px) {
   body {
-    font-size: 17px;
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 320px) {
   body {
-    font-size: 13px;
+    font-size: 10px;
+  }
+
+  .code__button {
+    width: 15em;
   }
 }
